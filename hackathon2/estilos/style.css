@@ -1,9 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 body{
     background-color: #e5e5e5;
+    width: 100%;
 }
 header{
     width: 100%;
@@ -13,6 +14,12 @@ header{
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+article#article-table{
+    margin-left: 272px;
+    width: 800px;
+    text-align: justify;
 }
 
 #header-title{
@@ -28,38 +35,164 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fab234;
 }
+nav#menu {
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top:1px;
+    left:700px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #fab234;
+    padding: 10px;
+    margin: -3px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+}
 .content-wrapper{
     width: 60%;
     max-width: 1200px;
     margin: 0 auto;
-    font-family:Arial, Helvetica, sans-serif; 
 }
-
 .content-title{
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
-}
-
-.content-text{
     font-family: Arial, Helvetica, sans-serif;
+}
+.content-text{
     margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: justify;
 }
 
 .article-title{
-    margin-top:10px;
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px
 }
 .article-text{
-    margin-top:10px;
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
 }
 .article-list{
-    margin-top:10px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+
 }
-.article-list-title{
-    margin-top:10px;
+.article-list-item{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+.article-table > thead{
+    background-color: #17a4a3;
+}
+thead tr td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 50px;
+}
+.article-table > tbody{
+    background-color: white;
+        
+}
+tbody tr:nth-child(2){
+    background-color: #eee;
+}
+tbody tr td {
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid black;
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div#text{
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*Formatação de imagens com legendas */
+
+figure.picture-label{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    margin: 10px;
+}
+
+figure.picture-label img{
+    width: 100%;
+    height: 100%;
+}
+figure.picture-label figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.picture-label:hover figcaption{
+    opacity: 1;
+}
+
+section#video{
+    width: 100%;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+section#footer{
+    position: absolute;
+    background-color: gainsboro;
+    height: 55px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:white;
+    background-color: #17a4a3;
 }
